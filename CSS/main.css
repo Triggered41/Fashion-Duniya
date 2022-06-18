@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Cursive';
+      src: url('../Fonts/Blacksword.otf');
+}
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    margin: 0;
+}
+
+body{
+    background-color: #FC8BC0;
+}
+
+nav{
+    padding-top: 2rem;
+    background-color: #FA53A0;
+    height: 3rem;
+    text-align: end;
+    font-size: small;
+}
+
+nav a ul{
+    
+}
+
+nav a:hover ul{
+    padding-right: 3rem;
+    list-style-type: none;
+    
+    display: block;
+}
+a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(143, 5, 3);
+}
+
+h1, h2, h3, h4{
+    text-align: center;
+    background-color: #fff48e;
+    color: rgb(255 101 98);
+    
+}
+input{
+    font-family: initial;
+    font-size: 1rem;
+}
+
+p{
+    text-align: center;
+    color: white;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
