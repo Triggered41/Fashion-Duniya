@@ -24,7 +24,7 @@ nav a:hover ul{
     
     display: block;
 }
-a{
+nav a{
     padding-right: 1rem;
     text-decoration: none;
     color: white;
@@ -37,6 +37,7 @@ a:hover{
 h1, h2, h3, h4{
     text-align: center;
     background-color: #fff48e;
+    box-shadow: 0px 2px 15px black;
     color: rgb(255 101 98);
 }
 input{
@@ -45,8 +46,21 @@ input{
 }
 
 p{
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
     color: white;
     margin-left: 10rem;
     margin-right: 10rem;
+}
+img{
+    width: 33%;
+    height: auto;
+}
+
+
+#trending{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

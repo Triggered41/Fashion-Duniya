@@ -9,26 +9,31 @@
 </head>
 <body>
     <div id="main">
-    <form id="frm" action="">
+    <form id="frm" name="form" action="">
         <h1>Lets get you started!</h1>
-        <label for="">Full Name</label>
-        <Input type="text" placeholder="Full Name"></Input>
-        <label for="">User Name</label>
-        <Input type="text" placeholder="User Name"></Input>
-        <label for="">Full Address</label>
-        <Input type="text" placeholder="Full Address"></Input>
-        <label for="">Pin Code</label>
-        <Input type="number" placeholder="Pin Code"></Input>
-        <label for="">Phone Number</label>
-        <Input type="number" placeholder="Phone Number"></Input>
-        <label for="">Password</label>
-        <Input type="password" placeholder="Password"></Input>
-        <label for="">Confirm Password</label>
-        <Input type="password" placeholder="Confirm Password"></Input>
+        <label>Full Name</label>
+        <Input type="text" placeholder="Full Name" required></Input>
+        <label>User Name</label>
+        <Input type="text" placeholder="User Name" required></Input>
+        <label>Email ID</label>
+        <Input type="email" placeholder="Email ID" required></Input>
+        <label>Full Address</label>
+        <Input type="text" placeholder="Full Address" required></Input>
+        <label>Pin Code</label>
+        <Input name="pin" type="text" placeholder="Pin Code" required></Input>
+        <label>Phone Number</label>
+        <Input name="number" type="text" placeholder="Phone Number" required></Input>
+        <label>Password</label>
+        <Input name="pass" type="password" placeholder="Password" required></Input>
+        <label>Confirm Password</label>
+        <Input name="cpass" type="password" placeholder="Confirm Password" required></Input>
         <Input type="submit" placeholder="Submit"></Input>
     </form>
     </div>
     <a href="#">Login Instead</a>
     <a href="#">forgot password</a>
+
+    <script src="../JS/form_validation.js"></script>
+
 </body>
 </html>
