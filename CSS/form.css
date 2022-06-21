@@ -2,13 +2,16 @@
 *{
     margin: 0;
     padding: 0;
-    color: #a10a50;
+    /* color: #5c6168; */
 }
 
 body{
-    background-image: linear-gradient(to right,#FC8BC0, #fff48e);
+    background-image: linear-gradient(to right,#93e0ee, #52baee);
 }
-
+input[type="submit"]{
+    background-color: #abe4ee;
+    font-weight: 750;
+}
 #main{
     padding-top: 3rem;
     text-align: center;
