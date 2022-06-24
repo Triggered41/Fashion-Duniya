@@ -29,7 +29,6 @@
     </style>
 </head>
 <body>
-    <audio src="./Audios/chimes.mp3" autoplay></audio>
     <nav class="nav">
         <a style="padding-right: 20%; top: 0;font-size: 2rem; color: #5c6168; font-family: 'Cursive';" href="">Fashion Duniya</a>
         <input type="text" placeholder="Find The Perfect Fit...">
@@ -119,14 +118,23 @@
 <a href="HTML/Cart.html" style="text-decoration: none; color: black;">
     <i class="fa fa-shopping-cart icon"></i>
 </a>
-<script>
-    localStorage.setItem("cart_items", 0)
-    // localStorage.setItem("dresses", ["hanfu"]z)
-</script>
+
+
+    <script>
+        const once = localStorage.getItem("once")
+        console.log(once)
+        if (!once){
+            localStorage.setItem("once", true)
+            localStorage.setItem("dresses", [])
+            localStorage.setItem("cart_items", 0)   
+        }
+    </script>
+    
 
     <script>
         var nav = document.getElementsByClassName("nav")
         var onscroll = function(window, ev){
+            console.log(localStorage.getItem("dresses"))
             // if (scrollY != 0){
             //     nav[0].style.backgroundColor = "#E64575"
             // } else{

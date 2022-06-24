@@ -11,7 +11,9 @@
 <body>
     <script>
         var head = document.createElement("h1");
-        head.innerText = localStorage.getItem("dresses")[1]
+        var tnode = document.createTextNode(localStorage.getItem("dresses"))
+        console.log(localStorage.getItem("dresses"))
+        head.appendChild(tnode)
         document.body.appendChild(head)
     </script>
 

@@ -25,11 +25,11 @@
 
     <div class="outer">
         <div class="card">
-            <a href="./HTML/Customer_Register.html"><h3 class="cart_but">999.99$</h3></a>
-            <a href="#"><img src="../../Images/dress6.jpg" alt=""></a>
+            <a href="./HTML/Customer_Register.html"><h3 id="price" class="cart_but">999.99$</h3></a>
+            <a href="#"><img id="img" src="../../Images/dress6.jpg" alt=""></a>
         </div>
         <div class="box">
-            <h1 class="heading title">Over Sized Top</h1>
+            <h1 id="name" class="heading title">Over Sized Top</h1>
             <table class="table">
                 <tr>
                     <th>Size</th>
@@ -55,12 +55,12 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr><td colspan="6" class="heading" style="font-size: 25px;">Description</td></tr>
-                <tr><td colspan="6" style="text-align: center; width: 4rem;">
+                <tr class="des"><td colspan="6" class="heading" style="font-size: 25px;">Description</td></tr>
+                <tr><td id="des" colspan="6" style="text-align: center; width: 4rem;">
                     Hanfu is a traditional dress of japan culture that bla... bla... bla...
                 </td></tr>
             </table>
-            <button>Add to cart</button>
+            <button onclick="add('Over Sized top')">Add to cart</button>
         </div>
         </div>
         <a href="../Cart.html" style="text-decoration: none; color: black;">
@@ -70,7 +70,7 @@
             <div style="height: 10rem; width: 100%; background-color: black;"></div>
         </footer>
 
-
+        <script src="../../JS/add_to_cart.js"></script>
 
 </body>
 </html>

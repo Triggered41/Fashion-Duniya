@@ -30,7 +30,7 @@
 
     <h2 class="heading">My Cart</h2>
     <br>
-    <div class="outer">
+    <!-- <div class="outer">
         <div class="card">
             <img src="../Images/dress1.jpg" alt="">
         </div>
@@ -71,19 +71,88 @@
                 </tr>
             </table>
         </div>
-    </div>
-    <table class="table">
-        <tr><td class="heading" style="font-size: 25px;">Total Amount</td></tr>
-        <tr><td> +100$ </td></tr>
-        <tr><td> +400$ </td></tr>
-        <tr><td> +600$ </td></tr>
-        <tr><td> +tax(%18) </td></tr>
-        <tr><th> =1450.99$ </th></tr>
+    </div> -->
+
+    <script>
+        var im = parseInt(localStorage.getItem("cart_items"))
+        for (k = 1; k<=im; k++)
+        {
+
+            var out_div = document.createElement("div")
+            out_div.classList.add("outer")
+            var card_div = document.createElement("div")
+            card_div.classList.add("card")
+            out_div.appendChild(card_div)
+            var img = document.createElement("img")
+            card_div.appendChild(img)
+            var dresses = localStorage.getItem("dresses")
+            var i = dresses.split(",")
+            img.setAttribute("src", localStorage.getItem(i[k]+"path")) //Add Image
+            document.body.appendChild(out_div)
+            var box = document.createElement("div")
+            box.classList.add("box")
+            out_div.appendChild(box)
+            var h = document.createElement("h1")
+            h.classList.add("heading")
+            h.classList.add("title")
+            var dresses = localStorage.getItem("dresses").split(",")
+            var nnn = document.createTextNode(dresses[k])  //Add name of dress
+            h.appendChild(nnn)
+            box.appendChild(h)
+            var tab = document.createElement("table")
+            tab.classList.add("table")
+            box.appendChild(tab)
+            var row = document.createElement("tr")
+            var col1 = document.createElement("td")
+            var col2 = document.createElement("td")
+            var tn1 = document.createTextNode(localStorage.getItem(dresses[1]+"info"))
+            var tn2 = document.createTextNode("Price: " + localStorage.getItem((dresses[k]+"price"))) //Ad Price
+            col1.appendChild(tn1)
+            col2.appendChild(tn2)
+            row.appendChild(col1)
+            row.appendChild(col2)
+            tab.appendChild(row)
+        }
+
+
+        
+    </script>
+
+    <table id="tab" class="table">
+        <tr><td class="heading" style="font-size: 25px;">Billing</td></tr>
+        <script>
+            var im = parseInt(localStorage.getItem("cart_items"))
+            var tab = document.getElementById("tab")
+            var total_price = 0;
+            for (k = 1; k <= im; k++){
+                var dresses = localStorage.getItem("dresses").split(",")
+                var row = document.createElement("tr")
+                var col = document.createElement("td")
+                var pr = localStorage.getItem(dresses[k]+"price")
+                var n = document.createTextNode("+" + localStorage.getItem(dresses[k]+"price"))
+                col.appendChild(n)
+                row.appendChild(col)
+                tab.appendChild(row)
+                total_price += parseFloat(pr)
+            }
+            var row = document.createElement("tr")
+            var col = document.createElement("th")
+            var n = document.createTextNode("Final Amount: "+total_price+"$")
+            col.appendChild(n)
+            row.appendChild(col)
+            tab.appendChild(row)
+
+        </script>
+
         
     </table>
     <center>
         <button>Check Out</button>
     </center>
     <br><br><br><br><br><br>
+
+    <script>
+        // console.log(localStorage)
+    </script>
 </body>
 </html>
