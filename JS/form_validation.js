@@ -1,3 +1,4 @@
+globalThis.myvar = "iojh"
 var form = document.forms['form'];
 form.onsubmit = function(e){
   e.preventDefault();

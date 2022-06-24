@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fashion Duniya</title>
+
+    <style>
+        
+        footer a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: all 100ms;
+        }
+        footer i{
+            color: white;
+        }
+        tr{
+            height: 3rem;
+            color: white;
+        }
+        th{
+            color: black;
+        }
+
+    </style>
 </head>
 <body>
     <audio src="./Audios/chimes.mp3" autoplay></audio>
@@ -18,36 +38,37 @@
         <a href="">Contact Us</a>
         <a href="./HTML/Customer_Register.html">Become a customer</a>
         <a href="./HTML/Designer_Register.html">Grow your business</a>
+
     </nav>
     <div>
     <h1 class="heading">Fashion Duniya</h1>
         <p style="color: white;">BUY! SELL! CREATE!</p>
         <div class="outer">
             <div class="card">
-                <a href="./HTML/dresses/Dress1.html"><h2 class="cart_but">View</h2></a>
-                <a href="#"><img src="Images/dress1.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress1.html"><h2 class="cart_but">Hanfu</h2></a>
+                <a href="./HTML/dresses/Dress1.html"><img src="Images/dress1.jpg" alt=""></a>
             </div>
             <div class="card">
-                <a href="./HTML/dresses/Dress2.html"><h2 class="cart_but">View</h2></a>
-                <a href="#"><img src="Images/dress2.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress2.html"><h2 class="cart_but">Modern Jacket</h2></a>
+                <a href="./HTML/dresses/Dress2.html"><img src="Images/dress2.jpg" alt=""></a>
             </div>
             <div class="card">
-                <a href="./HTML/dresses/Dress3.html"><h2 class="cart_but">View</h2></a>
-                <a href="#"><img src="Images/dress3.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress3.html"><h2 class="cart_but">Club Outfit</h2></a>
+                <a href="./HTML/dresses/Dress3.html"><img src="Images/dress3.jpg" alt=""></a>
             </div>
         </div>
         <div class="outer">
             <div class="card">
-                <a href="./HTML/dresses/Dress4.html"><h2 class="cart_but">View</h2></a>
-                <a href="#"><img src="Images/dress4.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress4.html"><h2 class="cart_but">Pajama Top</h2></a>
+                <a href="./HTML/dresses/Dress4.html"><img src="Images/dress4.jpg" alt=""></a>
             </div>
             <div class="card">
-                <a href="./HTML/dresses/Dress5.html"><h2 class="cart_but">View</h2></a>
-                <a href="#"><img src="Images/dress5.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress5.html"><h2 class="cart_but">Street Jacket</h2></a>
+                <a href="./HTML/dresses/Dress5.html"><img src="Images/dress5.jpg" alt=""></a>
             </div>
             <div class="card">
-                <a href="./HTML/dresses/Dress6.html"><h3 class="cart_but">View</h3></a>
-                <a href="#"><img src="Images/dress6.jpg" alt=""></a>
+                <a href="./HTML/dresses/Dress6.html"><h3 class="cart_but">Over Sized Top</h3></a>
+                <a href="./HTML/dresses/Dress6.html"><img src="Images/dress6.jpg" alt=""></a>
             </div>
         </div>
     
@@ -68,10 +89,40 @@
         project now it is home to thousands of creators from around 
         the country
     </p>
-    <footer>
-        <div style="background-color: #3b3b3b; width: 100%; height: 400px"></div>
+    <footer style="padding-top: 2%;width: 100%; height: auto; background-color: #393b3d;">
+        <table style="padding-bottom: 3%;width: 100%; text-align: center;">
+            <tr>
+                <th>Links</th>
+                <th>Contacts</th>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-home"> Home</a></i></td>
+                <td><i class="fa fa-instagram"></i></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-info"><a href="#about"> aboutus</a></i></td>
+                <td><i class="fa fa-facebook"></i></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-phone"><a href="#"> Contack Us</a></i></td>
+                <td><i class="fa fa-linkedin"></i></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-"><a href="#"> Home</a></i></td>
+                <td><i class="fa fa-twitter"></i></td>
+            </tr>
+        </table>
     </footer>
+
+    
 </div>
+<a href="HTML/Cart.html" style="text-decoration: none; color: black;">
+    <i class="fa fa-shopping-cart icon"></i>
+</a>
+<script>
+    localStorage.setItem("cart_items", 0)
+    // localStorage.setItem("dresses", ["hanfu"]z)
+</script>
 
     <script>
         var nav = document.getElementsByClassName("nav")
