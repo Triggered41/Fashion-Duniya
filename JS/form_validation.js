@@ -1,5 +1,4 @@
 var form = document.forms['form'];
-
 form.onsubmit = function(e){
   e.preventDefault();
 

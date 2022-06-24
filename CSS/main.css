@@ -46,7 +46,7 @@ a:hover{
     background-color: #93e0ee;
     text-shadow: 0px 0px 5px white;
     color: #5c6168;
-    transition: color 100ms;
+    transition: all 100ms;
 }
 
 .heading:hover{
@@ -70,26 +70,27 @@ p{
 }
 
 img{
+    border-radius: 10px;
     box-shadow: 0px 0px 00px black;
     width: 75%;
     height: auto;
-    transition: opacity 0.5s ease-in-out, box-shadow 0.5s;
+    transition: all 0.5s;
 }
 
 img:hover{
-    box-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 10px black;
     opacity: 0.8;
 }
+
 
 .cart_but {
     text-align: center;
     background-color: #bfe6ed;
-    box-shadow: 0px 0px 0px black;
     position: relative;
     top: 93%;
     opacity: 0.0;
-    width: 74%;
-    margin-left: 13%;
+    width: calc(74% + 4px);
+    margin-left: calc(13% - 2px);
     transition: opacity 0.5s ease, top 0.5s ease, box-shadow 0.5s;
 }
 
@@ -101,11 +102,19 @@ img:hover{
 
 .card{
     display: initial;
+    transition: all 20s;
 }
 
+.card a{
+    text-decoration: none;
+    color: #2daeee;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
 .card:hover .cart_but{
     top: 84%;
     opacity: 1.0;
-    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
     z-index: 1;
 }
+
+
