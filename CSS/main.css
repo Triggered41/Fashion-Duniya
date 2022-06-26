@@ -134,3 +134,18 @@ img:hover{
     font-size: 180%;
 }
 
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 100ms;
+}
+footer i{
+    color: white;
+}
+footer tr{
+    height: 3rem;
+    color: white;
+}
+footer th{
+    color: black;
+}

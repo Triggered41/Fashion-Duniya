@@ -30,7 +30,7 @@ tr{
     height: 3rem;
     border: 1px solid black;
 }
-tr:hover{
+.table tr:hover{
     background-color: #2aadee44;
 
 }

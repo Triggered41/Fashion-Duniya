@@ -1,7 +1,9 @@
-globalThis.myvar = "iojh"
 var form = document.forms['form'];
 form.onsubmit = function(e){
   e.preventDefault();
+
+    var url=location.href;
+    var urlFilename = url.substring(url.lastIndexOf('/')+1);
 
   if (form.pin != null && form.cpass != null && form.number != null){
 
@@ -18,8 +20,18 @@ form.onsubmit = function(e){
             alert("passwords don't match")
         }else{
             alert("you have been registered")
-            form.submit()
+            if (urlFilename.includes("Customer")){
+                window.open("../HTML/Customer_Login.html", "_self")
+            }else{
+                window.open("../HTML/Designer_Login.html", "_self")
+            }
+        }
+    }else{
+        console.log("HELLO")
+        if (urlFilename.includes("Customer")){
+            window.open("../index.html")
+        }else{
+            window.open("../HTML/upload.html")
         }
     }
-
 }

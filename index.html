@@ -7,26 +7,6 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fashion Duniya</title>
-
-    <style>
-        
-        footer a{
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-            transition: all 100ms;
-        }
-        footer i{
-            color: white;
-        }
-        tr{
-            height: 3rem;
-            color: white;
-        }
-        th{
-            color: black;
-        }
-
-    </style>
 </head>
 <body>
     <nav class="nav">
@@ -126,7 +106,9 @@
         if (!once){
             localStorage.setItem("once", true)
             localStorage.setItem("dresses", [])
-            localStorage.setItem("cart_items", 0)   
+            localStorage.setItem("u_dresses", [])
+            localStorage.setItem("images", [])
+            localStorage.setItem("cart_items", 0)
         }
     </script>
     
