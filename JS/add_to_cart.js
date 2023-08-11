@@ -26,6 +26,25 @@ function add(dress)
     console.log(name.innerText)
     console.log(localStorage.getItem("cart_items"))
     console.log(localStorage.getItem("dresses"))
+    
+    var str = {
+                    "dressname": name.innerText,
+                    "dressPrice": price.innerText,
+                    "dressInfo": d.innerText,
+                    "dressPath": img.getAttribute("src"),
+                }
+    var json = JSON.stringify(str);
 
-    alert("Item has been added to your cart")
+    fetch("../../PHP/addToCart.php",{
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": json
+    }).then(function(res){
+      return res.text();
+    }).then(function(data){
+      alert(data);
+    })
+    alert("Item has been added to your cart");
 }

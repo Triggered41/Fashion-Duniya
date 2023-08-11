@@ -20,18 +20,22 @@ form.onsubmit = function(e){
             alert("passwords don't match")
         }else{
             alert("you have been registered")
-            if (urlFilename.includes("Customer")){
-                window.open("../HTML/Customer_Login.html", "_self")
-            }else{
-                window.open("../HTML/Designer_Login.html", "_self")
-            }
+            form.submit();
+            return true
+            // if (urlFilename.includes("Customer")){
+            //     window.open("../HTML/Customer_Login.html", "_self")
+            // }else{
+            //     window.open("../HTML/Designer_Login.html", "_self")
+            // }
         }
     }else{
         console.log("HELLO")
-        if (urlFilename.includes("Customer")){
-            window.open("../index.html")
-        }else{
-            window.open("../HTML/upload.html")
-        }
+        form.submit();
+        return true;
+        // if (urlFilename.includes("Customer")){
+        //     window.open("../index.html")
+        // }else{
+        //     window.open("../HTML/upload.html")
+        // }
     }
 }

@@ -9,12 +9,12 @@
 </head>
 <body>
     <div id="main">
-    <form id="frm" name="form" action="">
+    <form id="frm" name="form" method="post" action="../PHP/OnCustomerLogin.php">
         <h1>Login to your account</h1>
         <label>User Name</label>
-        <Input type="text" placeholder="User Name"></Input>
+        <Input name="name" type="text" placeholder="User Name"></Input>
         <label>Password</label>
-        <Input type="password" placeholder="Password"></Input>
+        <Input name="password" type="password" placeholder="Password"></Input>
         <Input type="submit" placeholder="Submit"></Input>
     </form>
     </div>

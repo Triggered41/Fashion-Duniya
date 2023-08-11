@@ -9,22 +9,22 @@
 </head>
 <body>
     <div id="main">
-    <form id="frm" name="form" action="">
+    <form id="frm" name="form" method="post" action="../PHP/OnCustomerRegister.php">
         <h1 style="font-family: auto;">Lets get you started!</h1>
-        <label>Full Name</label>
-        <Input type="text" placeholder="Full Name" required></Input>
+        <!-- <label>Full Name</label>
+        <Input type="text" placeholder="Full Name" required></Input> -->
         <label>User Name</label>
-        <Input type="text" placeholder="User Name" required></Input>
+        <Input name="name" type="text" placeholder="User Name" required></Input>
         <label>Email ID</label>
-        <Input type="email" placeholder="Email ID" required></Input>
-        <label>Full Address</label>
-        <Input type="text" placeholder="Full Address" required></Input>
-        <label>Pin Code</label>
-        <Input name="pin" type="text" placeholder="Pin Code" required></Input>
+        <Input name="email" type="email" placeholder="Email ID" required></Input>
+        <label>Address</label>
+        <Input name="address" type="text" placeholder="Full Address" required></Input>
+        <!-- <label>Pin Code</label>
+        <Input name="pin" type="text" placeholder="Pin Code" required></Input> -->
         <label>Phone Number</label>
-        <Input name="number" type="text" placeholder="Phone Number" required></Input>
+        <Input name="contact" type="text" placeholder="Phone Number" required></Input>
         <label>Password</label>
-        <Input name="pass" type="password" placeholder="Password" required></Input>
+        <Input name="password" type="password" placeholder="Password" required></Input>
         <label>Confirm Password</label>
         <Input name="cpass" type="password" placeholder="Confirm Password" required></Input>
         <Input type="submit" placeholder="Submit"></Input>
