@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* Styling for the menu */
+        .drop-menu{
+            text-align: center;
+            width: fit-content; /*Minimize the width so it does not cover the whole screen*/
+            padding-inline: 4px;
+            background-color: aquamarine;
+            border-radius: 5px;
+        }
+        /* Hide the menu by default */
+        .drop-menu ul{
+            display: none;       
+        }
+        .drop-menu:hover ul{
+            display: block;
+        }
+        /* styling */
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        /* styling */
+        h2{
+            background-color: blueviolet;
+            border-radius: 5px;
+            padding: 3px;
+        }
+        /* styling */
+        h2:hover{
+            background-color: aqua;
+        }
+        /* to make the items appear right below the menu */
+        ul{
+            margin: 0;
+            padding: 0;
+
+        }
+        /* styling */
+        li{
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 5px;
+            list-style: none;
+        }
+        /* styling */
+        li:hover{
+            background-color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="drop-menu">
+        <a><h2>Contacts</h2></a>
+        <ul>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">LinkeDin</a></li>
+            <li><a href="">E-mail</a></li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

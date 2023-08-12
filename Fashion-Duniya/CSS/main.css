@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Cursive';
+      src: url('../Fonts/Blacksword.otf');
+}
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    margin: 0;
+}
+
+body{
+    background-image: url(../Images/R.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #A4E650; */
+}
+.nav{
+    position: sticky;
+    top: 0;
+    /* padding-top: 2rem; */
+    background-color: #bfe6ed;
+    height: 3rem;
+    text-align: end;
+    font-size: small;
+    z-index: 10;
+    transition: background-color 1s;
+}
+
+.nav a:hover ul{
+    padding-right: 3rem;
+    list-style-type: none;
+    
+    display: block;
+}
+.nav a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: #5c6168;
+}
+
+nav a:hover{
+    color: #27292b;
+}
+
+.heading{
+    text-align: center;
+    background-color: #93e0ee;
+    color: #5c6168;
+    transition: all 100ms;
+}
+
+.heading:hover{
+    color: #11a1e9;
+    box-shadow: 0px 2px 10px black;
+}
+
+input{
+    font-family: initial;
+    font-size: 1rem;
+}
+
+p{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    transition: color 0.3s;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 00px black;
+    width: 75%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+img:hover{
+    box-shadow: 1px 1px 10px black;
+    opacity: 0.8;
+}
+
+
+.cart_but {
+    text-align: center;
+    background-color: #bfe6ed;
+    position: relative;
+    top: 93%;
+    opacity: 0.0;
+    width: calc(74% + 4px);
+    margin-left: calc(13% - 2px);
+    transition: opacity 0.5s ease, top 0.5s ease, box-shadow 0.5s;
+}
+
+.outer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.card{
+    display: initial;
+    transition: all 20s;
+}
+
+.card a{
+    text-decoration: none;
+    color: #000000;
+}
+.card:hover .cart_but{
+    top: 84%;
+    opacity: 1.0;
+    z-index: 1;
+}
+
+.icon{
+    border: 2px solid black ;
+    background-color: rgba(0, 255, 255, 0.452);
+    border-radius: 50%;
+    padding: 1%;
+    left: 94%;
+    top: 85%;
+    position: fixed;
+    font-size: 100%;
+    transition: all 200ms;
+    
+}
+
+.icon:hover{
+    background-color: aqua;
+}
+.icon:active{
+    font-size: 180%;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 100ms;
+}
+footer i{
+    color: white;
+}
+footer tr{
+    height: 3rem;
+    color: white;
+}
+footer th{
+    color: black;
+}

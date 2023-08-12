@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../CSS/main.css">
+    <link rel="stylesheet" href="../../CSS/item.css">
+
+</head>
+<body>
+    <nav class="nav">
+        <a style="padding-right: 20%; top: 0;font-size: 2rem; color: #5c6168; font-family: 'Cursive';" href="../../index.html">Fashion Duniya</a>
+        <input type="text" placeholder="Find The Perfect Fit...">
+        <i class="fa fa-search"></i>
+        <a href="../../index.html#about">About US</a>
+        <a href="">Contact Us</a>
+        <a href="../../HTML/Customer_Register.html">Become a customer</a>
+        <a href="../../HTML/Designer_Register.html">Grow your business</a>
+    </nav>
+
+        <h1 class="heading">Details</h1>
+
+    <div class="outer">
+        <div class="card">
+            <a href="./HTML/Customer_Register.html"><h3 id="price" class="cart_but">50$</h3></a>
+            <a href="#"><img id="img" src="../../Images/dress2.jpg" alt=""></a>
+        </div>
+        <div class="box">
+            <h1 id="name" class="heading title">Modern Jacket</h1>
+            <table class="table">
+                <tr>
+                    <th>Size</th>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>Xl</td>
+                    <td>XLL</td>
+                    <td>XlS</td>
+                    
+                </tr>
+                <tr>
+                    <th>Design</th>
+                    <td>Chicken</td>
+                    <td colspan="2">GREEN</td>
+                    <td colspan="2">BLUE</td>
+
+                </tr>
+                <tr>
+                    <th>Cloth Type</th>
+                    <td>Silk</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="des"><td colspan="6" class="heading" style="font-size: 25px;">Description</td></tr>
+                <tr><td id="des" colspan="6" style="text-align: center; width: 4rem;">
+                    Hanfu is a traditional dress of japan culture that bla... bla... bla...
+                </td></tr>
+            </table>
+            <button onclick="add('Modern Jacket')">Add to cart</button>
+        </div>
+        </div>
+        <a href="../Cart.html" style="text-decoration: none; color: black;">
+            <i class="fa fa-shopping-cart icon"></i>
+        </a>
+        <footer style="padding-top: 2%;width: 100%; height: auto; background-color: #393b3d;">
+            <table style="padding-bottom: 3%;width: 100%; text-align: center;">
+                <tr>
+                    <th>Links</th>
+                    <th>Contacts</th>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-home"> Home</a></i></td>
+                    <td><i class="fa fa-instagram"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-info"><a href="#about"> aboutus</a></i></td>
+                    <td><i class="fa fa-facebook"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-phone"><a href="#"> Contack Us</a></i></td>
+                    <td><i class="fa fa-linkedin"></i></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-"><a href="#"> Home</a></i></td>
+                    <td><i class="fa fa-twitter"></i></td>
+                </tr>
+            </table>
+        </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script src="../../JS/add_to_cart.js"></script>
+
+</body>
+</html>

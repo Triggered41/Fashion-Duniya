@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/item.css">
+    <style>
+        img{
+            width: 40%;
+        }
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a style="padding-right: 20%; top: 0;font-size: 2rem; color: #5c6168; font-family: 'Cursive';" href="../index.html">Fashion Duniya</a>
+        <input type="text" placeholder="Find The Perfect Fit...">
+        <i class="fa fa-search"></i>
+        <a href="../../index.html#about">About US</a>
+        <a href="">Contact Us</a>
+        <a href="./HTML/Customer_Register.html">Become a customer</a>
+        <a href="./HTML/Designer_Register.html">Grow your business</a>
+    </nav>
+
+    <h2 class="heading">My Cart</h2>
+    <br>
+    <!-- <div class="outer">
+        <div class="card">
+            <img src="../Images/dress1.jpg" alt="">
+        </div>
+        <div class="box">
+            <h1 class="heading title">Hanfu</h1>
+            <table class="table">
+                <tr>
+                   <td>Hanfu is a chinese traditional outfit</td>
+                   <td>Price: 90$</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    <div class="outer">
+        <div class="card">
+            <img src="../Images/dress2.jpg" alt="">
+        </div>
+        <div class="box">
+            <h1 class="heading title">Hanfu</h1>
+            <table class="table">
+                <tr>
+                   <td>Hanfu is a chinese traditional outfit</td>
+                   <td>Price: 75$</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+    <div class="outer">
+        <div class="card">
+            <img src="../Images/dress3.jpg" alt="">
+        </div>
+        <div class="box">
+            <h1 class="heading title">Hanfu</h1>
+            <table class="table">
+                <tr>
+                   <td>Hanfu is a chinese traditional outfit</td>
+                   <td>Price: 40$</td>
+                </tr>
+            </table>
+        </div>
+    </div> -->
+
+    <script>
+        var im = parseInt(localStorage.getItem("cart_items"))
+        for (k = 1; k<=im; k++)
+        {
+
+            var out_div = document.createElement("div")
+            out_div.classList.add("outer")
+            var card_div = document.createElement("div")
+            card_div.classList.add("card")
+            out_div.appendChild(card_div)
+            var img = document.createElement("img")
+            card_div.appendChild(img)
+            var dresses = localStorage.getItem("dresses")
+            var i = dresses.split(",")
+            img.setAttribute("src", localStorage.getItem(i[k]+"path")) //Add Image
+            document.body.appendChild(out_div)
+            var box = document.createElement("div")
+            box.classList.add("box")
+            out_div.appendChild(box)
+            var h = document.createElement("h1")
+            h.classList.add("heading")
+            h.classList.add("title")
+            var dresses = localStorage.getItem("dresses").split(",")
+            var nnn = document.createTextNode(dresses[k])  //Add name of dress
+            h.appendChild(nnn)
+            box.appendChild(h)
+            var tab = document.createElement("table")
+            tab.classList.add("table")
+            box.appendChild(tab)
+            var row = document.createElement("tr")
+            var col1 = document.createElement("td")
+            var col2 = document.createElement("td")
+            var tn1 = document.createTextNode(localStorage.getItem(dresses[1]+"info"))
+            var tn2 = document.createTextNode("Price: " + localStorage.getItem((dresses[k]+"price"))) //Ad Price
+            col1.appendChild(tn1)
+            col2.appendChild(tn2)
+            row.appendChild(col1)
+            row.appendChild(col2)
+            tab.appendChild(row)
+        }
+
+
+        
+    </script>
+
+    <table id="tab" class="table">
+        <tr><td class="heading" style="font-size: 25px;">Billing</td></tr>
+        <script>
+            var im = parseInt(localStorage.getItem("cart_items"))
+            var tab = document.getElementById("tab")
+            var total_price = 0;
+            for (k = 1; k <= im; k++){
+                var dresses = localStorage.getItem("dresses").split(",")
+                var row = document.createElement("tr")
+                var col = document.createElement("td")
+                var pr = localStorage.getItem(dresses[k]+"price")
+                var n = document.createTextNode("+" + localStorage.getItem(dresses[k]+"price"))
+                col.appendChild(n)
+                row.appendChild(col)
+                tab.appendChild(row)
+                total_price += parseFloat(pr)
+            }
+            var row = document.createElement("tr")
+            var col = document.createElement("th")
+            var n = document.createTextNode("Final Amount: "+total_price+"$")
+            col.appendChild(n)
+            row.appendChild(col)
+            tab.appendChild(row)
+
+        </script>
+
+        
+    </table>
+    <center>
+        <button>Check Out</button>
+    </center>
+    <br><br><br><br><br><br>
+
+    <script>
+        // console.log(localStorage)
+    </script>
+</body>
+</html>

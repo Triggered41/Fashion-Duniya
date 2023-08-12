@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/item.css">
+    <style>
+        #frm *{
+            width: 90%;
+            line-height: 30px;
+        }
+        img{
+            width: 355px;
+        }
+        .cart_but{
+            margin: 0;
+            width: 56%;
+        }
+        .card:hover .cart_but{
+            top: 65%;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="outer">
+
+        <div class="card">
+            <input type="file" class="cart_but">
+            <img src="../Images/dress1.jpg" alt="">
+        </div>
+    
+        <div id="main">
+            <form id="frm" name="form">
+                <label>Title</label>
+                <input name="name" type="text" placeholder="Title">
+                <label>Description</label>
+                <textarea style="resize: vertical;"></textarea>
+                <label>Price</label>
+                <input type="text" placeholder="Price">
+            </form>
+            <button onclick="upload()">Upload</button>
+        </div>
+    </div>
+
+    <script src="../JS/upload.js"></script>
+
+</body>
+</html>
